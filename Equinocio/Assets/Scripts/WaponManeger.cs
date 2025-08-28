@@ -38,7 +38,8 @@ public class WaponManeger : MonoBehaviour
             {
                 this.target = target;
             }
-            else { 
+            else 
+            { 
                 this.target = null;
             }
         }
