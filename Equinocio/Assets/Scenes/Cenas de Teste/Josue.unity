@@ -722,7 +722,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3852e769c51557941b4e1c388f1bbcdd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _changeWeapon: 2
+  _changeWeapon: 0
+  weaponDistance: 0
+  knifeDistance: 0
 --- !u!1001 &1996987611
 PrefabInstance:
   m_ObjectHideFlags: 0

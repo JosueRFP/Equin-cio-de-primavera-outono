@@ -30,6 +30,18 @@ public class WaponManeger : MonoBehaviour
 
         if (Input.GetButtonDown("Fire1"))
             target?.Hit();
+
+        if (Input.GetKeyDown(KeyCode.E)) 
+        {
+            ChangeWealdingWeapon(ChangeWeapon.Gun);
+        }
+            
+
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            ChangeWealdingWeapon(ChangeWeapon.Gun);
+
+        }
     }
 
     private void FixedUpdate()
@@ -57,6 +69,7 @@ public class WaponManeger : MonoBehaviour
                 distance = weaponDistance;
                 break; 
             case ChangeWeapon.Knife:
+                distance = knifeDistance;
                 break;
         }
     }
