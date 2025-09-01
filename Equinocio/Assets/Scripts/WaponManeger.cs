@@ -9,6 +9,8 @@ public enum ChangeWeapon
 public class WaponManeger : MonoBehaviour
 {
     [SerializeField] ChangeWeapon _changeWeapon;
+    [SerializeField] float weaponDistance;
+    [SerializeField] float knifeDistance;
 
     Transform rayCastOrigin;
     IHitable target;
@@ -52,6 +54,7 @@ public class WaponManeger : MonoBehaviour
             case ChangeWeapon.None:
                 break;
             case ChangeWeapon.Gun:
+                distance = weaponDistance;
                 break; 
             case ChangeWeapon.Knife:
                 break;
