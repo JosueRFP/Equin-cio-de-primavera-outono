@@ -130,6 +130,7 @@ GameObject:
   - component: {fileID: 3224382}
   - component: {fileID: 3224381}
   - component: {fileID: 3224380}
+  - component: {fileID: 3224383}
   m_Layer: 0
   m_Name: perseguindo carne
   m_TagString: Untagged
@@ -229,6 +230,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3224383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3224379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff4e9f3c84093d246bf5681a683909a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floating: 0
+  floatAmplitude: 0.25
+  floatSpeed: 1
 --- !u!1001 &23434922
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1391,6 +1407,7 @@ GameObject:
   - component: {fileID: 344391574}
   - component: {fileID: 344391573}
   - component: {fileID: 344391572}
+  - component: {fileID: 344391575}
   m_Layer: 0
   m_Name: idle olho
   m_TagString: Untagged
@@ -1490,6 +1507,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &344391575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 344391571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff4e9f3c84093d246bf5681a683909a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floating: 0
+  floatAmplitude: 0.25
+  floatSpeed: 1
 --- !u!1001 &348329262
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3014,6 +3046,7 @@ GameObject:
   - component: {fileID: 616760958}
   - component: {fileID: 616760957}
   - component: {fileID: 616760956}
+  - component: {fileID: 616760959}
   m_Layer: 0
   m_Name: atacando, carne
   m_TagString: Untagged
@@ -3113,6 +3146,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &616760959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 616760955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff4e9f3c84093d246bf5681a683909a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floating: 0
+  floatAmplitude: 0.25
+  floatSpeed: 1
 --- !u!1 &624633703
 GameObject:
   m_ObjectHideFlags: 0
@@ -3691,6 +3739,7 @@ GameObject:
   - component: {fileID: 708486549}
   - component: {fileID: 708486548}
   - component: {fileID: 708486547}
+  - component: {fileID: 708486550}
   m_Layer: 0
   m_Name: idle, carne
   m_TagString: Untagged
@@ -3790,6 +3839,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &708486550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 708486546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff4e9f3c84093d246bf5681a683909a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floating: 0
+  floatAmplitude: 0.25
+  floatSpeed: 1
 --- !u!1 &710655903
 GameObject:
   m_ObjectHideFlags: 0
@@ -4696,6 +4760,7 @@ GameObject:
   - component: {fileID: 897174893}
   - component: {fileID: 897174892}
   - component: {fileID: 897174891}
+  - component: {fileID: 897174894}
   m_Layer: 0
   m_Name: patrulhando, carne
   m_TagString: Untagged
@@ -4795,6 +4860,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &897174894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 897174890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff4e9f3c84093d246bf5681a683909a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floating: 0
+  floatAmplitude: 0.25
+  floatSpeed: 1
 --- !u!1 &905330497 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -5568371526223589888, guid: 2692fd784b7933a44bd7b968cfc4a754, type: 3}
@@ -9529,6 +9609,7 @@ GameObject:
   - component: {fileID: 1762619333}
   - component: {fileID: 1762619332}
   - component: {fileID: 1762619331}
+  - component: {fileID: 1762619334}
   m_Layer: 0
   m_Name: atacando olho
   m_TagString: Untagged
@@ -9628,6 +9709,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1762619334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1762619330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff4e9f3c84093d246bf5681a683909a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floating: 0
+  floatAmplitude: 0.25
+  floatSpeed: 1
 --- !u!1 &1764598666 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 2692fd784b7933a44bd7b968cfc4a754, type: 3}

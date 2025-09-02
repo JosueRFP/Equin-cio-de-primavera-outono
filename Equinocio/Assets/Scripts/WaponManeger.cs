@@ -27,7 +27,7 @@ public class WaponManeger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.DrawRay(rayCastOrigin.position, rayCastOrigin.forward * 10, Color.red);
+        Debug.DrawRay(rayCastOrigin.position, rayCastOrigin.forward * 100, Color.red);
 
         if (Input.GetButtonDown("Fire1"))
             target?.Hit();
@@ -67,7 +67,7 @@ public class WaponManeger : MonoBehaviour
             case ChangeWeapon.None:
                 break;
             case ChangeWeapon.Gun:
-                distance = weaponDistance;
+                distance = weaponDistance *10;
                 break; 
             case ChangeWeapon.Knife:
                 distance = knifeDistance;
