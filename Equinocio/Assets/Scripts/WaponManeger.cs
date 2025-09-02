@@ -11,10 +11,11 @@ public class WaponManeger : MonoBehaviour
     [SerializeField] ChangeWeapon _changeWeapon;
     [SerializeField] float weaponDistance;
     [SerializeField] float knifeDistance;
+    [SerializeField] float distance;
 
     Transform rayCastOrigin;
     IHitable target;
-    float distance;
+   
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
