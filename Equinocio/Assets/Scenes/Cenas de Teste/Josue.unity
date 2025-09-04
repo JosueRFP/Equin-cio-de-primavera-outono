@@ -497,6 +497,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &154319618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 154319602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5807a77d09a0b44e8afb9a1cd889e42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &188571471
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -625,6 +637,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4174483578854974517, guid: 1fd4051bf0b37114db67065c94eb3ead, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1324407164}
+    - targetCorrespondingSourceObject: {fileID: 4174483578854974517, guid: 1fd4051bf0b37114db67065c94eb3ead, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1324407169}
   m_SourcePrefab: {fileID: 100100000, guid: 1fd4051bf0b37114db67065c94eb3ead, type: 3}
 --- !u!1001 &293680827
 PrefabInstance:
@@ -1587,8 +1602,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: d436104ba9f6a1a48aca4deed1292c3b, type: 3}
-  m_Resource: {fileID: 8300000, guid: d436104ba9f6a1a48aca4deed1292c3b, type: 3}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 0.707
   m_Pitch: 1
@@ -1855,6 +1870,18 @@ MonoBehaviour:
   firePoint: {fileID: 0}
   fireRate: 1
   bulletSpeed: 15
+--- !u!114 &1324407169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1324407152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5807a77d09a0b44e8afb9a1cd889e42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1386345517
 GameObject:
   m_ObjectHideFlags: 0
@@ -2007,6 +2034,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1632332534 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4174483578854974517, guid: 1fd4051bf0b37114db67065c94eb3ead, type: 3}
+  m_PrefabInstance: {fileID: 8304220990109152634}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1632332539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1632332534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5807a77d09a0b44e8afb9a1cd889e42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1690372254
 GameObject:
   m_ObjectHideFlags: 0
@@ -2055,7 +2099,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3852e769c51557941b4e1c388f1bbcdd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _sniperSound: {fileID: 8300000, guid: d436104ba9f6a1a48aca4deed1292c3b, type: 3}
+  OnSniperSound:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1307030851}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: PlayOneShot
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: d436104ba9f6a1a48aca4deed1292c3b, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _changeWeapon: 0
   weaponDistance: 10
   knifeDistance: 6
@@ -2192,6 +2250,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4174483578854974517, guid: 1fd4051bf0b37114db67065c94eb3ead, type: 3}
       insertIndex: -1
       addedObject: {fileID: 154319614}
+    - targetCorrespondingSourceObject: {fileID: 4174483578854974517, guid: 1fd4051bf0b37114db67065c94eb3ead, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 154319618}
   m_SourcePrefab: {fileID: 100100000, guid: 1fd4051bf0b37114db67065c94eb3ead, type: 3}
 --- !u!1 &1933063738 stripped
 GameObject:
@@ -2382,7 +2443,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4174483578854974517, guid: 1fd4051bf0b37114db67065c94eb3ead, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1632332539}
   m_SourcePrefab: {fileID: 100100000, guid: 1fd4051bf0b37114db67065c94eb3ead, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
