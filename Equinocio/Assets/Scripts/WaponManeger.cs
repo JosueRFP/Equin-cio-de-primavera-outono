@@ -24,6 +24,7 @@ public class WaponManeger : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        maxRange.SetActive(false);
         rayCastOrigin = Camera.main.transform;
         ChangeWealdingWeapon(ChangeWeapon.None);
     }
