@@ -27,6 +27,9 @@ public class MovEnemys : MonoBehaviour
     void Update()
     {
         Looking();
+
+        switch (states) { }
+
     }
 
     public void SetState(EnemyStates newState)

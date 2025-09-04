@@ -26,7 +26,7 @@ public class BulletManeger : MonoBehaviour
     // Update is called once per frame
     void UpdateBulletCount()
     {
-        _bulletText.text = "Munição" + _bulletQtd;
+        _bulletText.text = "" + _bulletQtd;
         _bulletText.color = Color.black;
 
         if(_bulletQtd == 0)
