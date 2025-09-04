@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class EyeAnim : MonoBehaviour
 {
+    public EnemyAI enemyAI;
     public static EyeAnim eyeAnim;
     Animator anim;
     // Start is called once before the first execution of Update after the MonoBehaviour is created

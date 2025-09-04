@@ -438,6 +438,7 @@ GameObject:
   - component: {fileID: 59375189}
   - component: {fileID: 59375188}
   - component: {fileID: 59375187}
+  - component: {fileID: 59375190}
   m_Layer: 0
   m_Name: bola de plasma, olho
   m_TagString: Untagged
@@ -537,6 +538,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &59375190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 59375186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff4e9f3c84093d246bf5681a683909a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floating: 0
+  floatAmplitude: 0.25
+  floatSpeed: 1
 --- !u!1001 &124906679
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8028,7 +8044,7 @@ RectTransform:
   m_GameObject: {fileID: 1625112796}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.0253, y: 2.0253, z: 2.0253}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1706958532}

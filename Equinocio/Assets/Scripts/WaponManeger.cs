@@ -8,6 +8,8 @@ public enum ChangeWeapon
 
 public class WaponManeger : MonoBehaviour
 {
+    AudioSource audioSource;
+    [SerializeField] private AudioClip _sniperSound;
     [SerializeField] ChangeWeapon _changeWeapon;
     [SerializeField] float weaponDistance;
     [SerializeField] float knifeDistance;
@@ -20,6 +22,7 @@ public class WaponManeger : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         rayCastOrigin = Camera.main.transform;
         ChangeWealdingWeapon(ChangeWeapon.None);
     }
@@ -30,7 +33,18 @@ public class WaponManeger : MonoBehaviour
         Debug.DrawRay(rayCastOrigin.position, rayCastOrigin.forward * 100, Color.red);
 
         if (Input.GetButtonDown("Fire1"))
+        {
             target?.Hit();
+            GameController.instance.OnSound.AddListener(delegate
+            {
+                print("Tocou");
+                
+
+            });
+            
+            
+
+        }
 
         if (Input.GetKeyDown(KeyCode.E)) 
         {

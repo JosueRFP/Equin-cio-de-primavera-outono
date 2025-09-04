@@ -5,6 +5,7 @@ public class GameController : MonoBehaviour
 {
     public static GameController instance;
     public UnityEvent OnZoom;
+    public UnityEvent OnSound;
 
 
 
