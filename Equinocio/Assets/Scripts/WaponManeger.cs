@@ -1,4 +1,5 @@
 using System.Collections;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -14,7 +15,8 @@ public class WaponManeger : MonoBehaviour
     [SerializeField] float weaponDistance;
     [SerializeField] float knifeDistance;
     [SerializeField] float distance;
-
+    [SerializeField] GameObject maxRange;
+ 
     Transform rayCastOrigin;
     IHitable target;
    
@@ -76,6 +78,8 @@ public class WaponManeger : MonoBehaviour
                 break;
             case ChangeWeapon.Gun:
                 distance = weaponDistance *10;
+                maxRange.SetActive(true);
+
                 break; 
             case ChangeWeapon.Knife:
                 distance = knifeDistance;
